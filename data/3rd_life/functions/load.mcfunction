@@ -9,16 +9,21 @@
 worldborder center ~ ~
 worldborder set 700
 
-# Add scoreboard
+# Add objectives
 scoreboard objectives add 3rd_death deathCount
+scoreboard objectives add 3rd_lives dummy
+scoreboard objectives add started dummy
+scoreboard players set @a started 0
 
-# Add team
-team add 3rd_first
-team modify 3rd_first color green
-team add 3rd_second
-team modify 3rd_second color yellow
-team add 3rd_third
-team modify 3rd_third color red
+# Add teams
+team add 3rd_extra
+team modify 3rd_extra color green
+team add 3rd_green
+team modify 3rd_green color dark_green
+team add 3rd_yellow
+team modify 3rd_yellow color yellow
+team add 3rd_red
+team modify 3rd_red color red
 team add 3rd_died
 team modify 3rd_died prefix ["",{"text": "["},{"text": "DIED","color": "gray"},{"text": "] "}]
 
