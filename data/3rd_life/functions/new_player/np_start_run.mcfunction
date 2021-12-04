@@ -1,1 +1,0 @@
-title @s title {"text":"You have.....","bold":true,"color":"green"}
