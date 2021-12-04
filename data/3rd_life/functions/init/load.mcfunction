@@ -20,7 +20,7 @@ team modify 3rd_red color red
 team add 3rd_died
 team modify 3rd_died prefix ["",{"text": "["},{"text": "DIED","color": "gray"},{"text": "] "}]
 
-## Shulker box
-execute in minecraft:overworld run function 3rd_life:shulker_box
-execute in minecraft:the_end run function 3rd_life:shulker_box
-execute in minecraft:the_nether run function 3rd_life:shulker_box
+# Shulker box
+# execute in minecraft:overworld run function 3rd_life:shulker_box
+# execute in minecraft:the_end run function 3rd_life:shulker_box
+# execute in minecraft:the_nether run function 3rd_life:shulker_box
