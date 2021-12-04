@@ -6,7 +6,7 @@ execute as @a[scores={3rd_death=1..}] run scoreboard players remove @s 3rd_lives
 execute as @a[scores={3rd_death=1..}] run scoreboard players set @s 3rd_death 0
 
 # Change gamemode to spectator when player loses all their lives
-gamemode spectator @a[scores={3rd_lives=0},team=!3rd_died]
+gamemode spectator @a[scores={3rd_lives=0},gamemode=!spectator]
 
 # Track lives and give them team
 
@@ -29,3 +29,4 @@ execute as @a[predicate=!3rd_life:wear_helmet,scores={helmet=1}] run scoreboard 
 
 # Check for new players
 
+# execute as @a unless score @s 3rd_lives >= 0 run function 
