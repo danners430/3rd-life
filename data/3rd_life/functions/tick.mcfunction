@@ -1,10 +1,3 @@
-#---------------------------------------------------------
-# This Datapack was made by Barra Ihsan
-# Please do not copy or credit this as your own work!
-# Youtube: youtube.com/barraIhsan
-# Github: github.com/barraIhsan
-#---------------------------------------------------------
-
 # Give them death score
 # execute as @a unless score @s 3rd_death matches -2147483648..2147483647 run scoreboard players set @s 3rd_death 0
 
