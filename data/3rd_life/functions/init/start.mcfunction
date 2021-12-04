@@ -1,6 +1,7 @@
 # mark game as started
 
 scoreboard players set @a started 1
+summon marker ~ ~ ~ {data:{Started:1}, Tags:["StartMarker"]}
 
 # initialize death score
 scoreboard players set @a 3rd_death 0
