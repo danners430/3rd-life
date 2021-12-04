@@ -8,4 +8,5 @@ execute as @a store result score @s 3rd_lives run data get entity @e[type=marker
 kill @e[tag=NumberMarker]
 
 title @a[scores={3rd_lives=3}] title [{"score":{"name":"*","objective":"3rd_lives"},"bold":true,"color":"green"},{"text":" lives!","bold":true,"color":"green"}]
-title @a[scores={3rd_lives=4..}] title [{"score":{"name":"*","objective":"3rd_lives"},"bold":true,"color":"dark_green"},{"text":" lives!","bold":true,"color":"dark_green"}]
+title @a[scores={3rd_lives=4..5}] title [{"score":{"name":"*","objective":"3rd_lives"},"bold":true,"color":"dark_green"},{"text":" lives!","bold":true,"color":"dark_green"}]
+title @a[scores={3rd_lives=6..}] title [{"score":{"name":"*","objective":"3rd_lives"},"bold":true,"color":"gold"},{"text":" lives!","bold":true,"color":"gold"}]

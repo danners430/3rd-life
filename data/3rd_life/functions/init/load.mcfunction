@@ -9,6 +9,8 @@ scoreboard objectives add started dummy
 scoreboard players set @a started 0
 
 # Add teams
+team add 3rd_full
+team modify 3rd_full color gold
 team add 3rd_extra
 team modify 3rd_extra color green
 team add 3rd_green
