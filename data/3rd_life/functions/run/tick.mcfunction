@@ -5,6 +5,9 @@
 execute as @a[scores={3rd_death=1}] run scoreboard players remove @s 3rd_lives 1
 execute as @a[scores={3rd_death=1}] run scoreboard players set @s 3rd_death 0
 
+# Change gamemode to spectator when player loses all their lives
+gamemode spectator @a[scores={3rd_lives=0},team=!3rd_died]
+
 # Track lives and give them team
 
 team join 3rd_died @a[scores={3rd_lives=0},team=!3rd_died]
@@ -18,8 +21,5 @@ team join 3rd_full @a[scores={3rd_lives=6..},team=!3rd_full]
 # team join 3rd_second @a[scores={3rd_death=1},team=!3rd_second]
 # team join 3rd_third @a[scores={3rd_death=2},team=!3rd_third]
 
-# Change gamemode to spectator when player loses all their lives
-gamemode spectator @a[scores={3rd_lives=0},team=!3rd_died]
-
 # Check if player wear helmet
-execute as @a[predicate=3rd_life:wear_helmet] at @s run function 3rd_life:wear_helmet
+# execute as @a[predicate=3rd_life:wear_helmet] at @s run function 3rd_life:wear_helmet
