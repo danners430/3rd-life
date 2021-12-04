@@ -15,4 +15,4 @@ schedule function 3rd_life:init/start_3 4s
 schedule function 3rd_life:init/start_2 6s
 schedule function 3rd_life:init/start_1 8s
 schedule function 3rd_life:init/start_run 10s
-schedule function 3rd_life:init/start_shuffle 12s
+schedule function 3rd_life:init/start_shuffle 13s
