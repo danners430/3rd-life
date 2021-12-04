@@ -1,6 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"3rd_life:load"
+		"3rd_life:init/load"
 	]
 }
