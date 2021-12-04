@@ -6,7 +6,9 @@ worldborder set 700
 scoreboard objectives add 3rd_death deathCount
 scoreboard objectives add 3rd_lives dummy
 scoreboard objectives add started dummy
+scoreboard objectives add helmet dummy
 scoreboard players set @a started 0
+scoreboard players set @a helmet 0
 
 # Add teams
 # team add 3rd_full

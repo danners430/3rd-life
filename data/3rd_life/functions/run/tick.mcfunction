@@ -23,4 +23,9 @@ team join 3rd_extra @a[scores={3rd_lives=4..},team=!3rd_extra]
 # team join 3rd_third @a[scores={3rd_death=2},team=!3rd_third]
 
 # Check if player wear helmet
-execute as @a[predicate=3rd_life:wear_helmet] run tellraw @a [{"selector":"@s"},{"text": " is wearing something on their head!"}]
+execute as @a[predicate=3rd_life:wear_helmet,scores={helmet=0}] run title @a title [{"selector":"@s"},{"text": " is wearing something on their head!","color": "red"}]
+execute as @a[predicate=3rd_life:wear_helmet,scores={helmet=0}] run scoreboard players set @s helmet 1
+execute as @a[predicate=!3rd_life:wear_helmet,scores={helmet=1}] run scoreboard players set @s helmet 0
+
+# Check for new players
+
