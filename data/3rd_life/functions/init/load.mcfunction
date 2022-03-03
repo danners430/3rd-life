@@ -6,10 +6,11 @@ worldborder set 700
 scoreboard objectives add 3rd_death deathCount
 scoreboard objectives add 3rd_lives dummy
 scoreboard objectives add 3rd_gift trigger
-scoreboard objectives add started dummy
-scoreboard objectives add helmet dummy
-scoreboard players set @a started 0
-scoreboard players set @a helmet 0
+scoreboard objectives add 3rd_started dummy
+scoreboard objectives add 3rd_helmet dummy
+scoreboard objectives add calc dummy
+scoreboard players set @a 3rd_started 0
+scoreboard players set @a 3rd_helmet 0
 
 # Add teams
 # team add 3rd_full
@@ -24,3 +25,8 @@ team add 3rd_red
 team modify 3rd_red color red
 team add 3rd_died
 team modify 3rd_died prefix ["",{"text": "["},{"text": "DIED","color": "gray"},{"text": "] "}]
+
+# Default to no weather and no daytime
+
+gamerule doDaylightCycle false
+gamerule doWeatherCycle false
