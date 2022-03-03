@@ -5,6 +5,7 @@ worldborder set 700
 # Add objectives
 scoreboard objectives add 3rd_death deathCount
 scoreboard objectives add 3rd_lives dummy
+scoreboard objectives add 3rd_gift trigger
 scoreboard objectives add started dummy
 scoreboard objectives add helmet dummy
 scoreboard players set @a started 0

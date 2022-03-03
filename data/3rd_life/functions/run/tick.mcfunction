@@ -19,3 +19,10 @@ team join 3rd_extra @a[scores={3rd_lives=4..},team=!3rd_extra]
 execute as @a[predicate=3rd_life:wear_helmet,scores={helmet=0}] run title @a title [{"selector":"@s"},{"text": " is wearing something on their head!","color": "red"}]
 execute as @a[predicate=3rd_life:wear_helmet,scores={helmet=0}] run scoreboard players set @s helmet 1
 execute as @a[predicate=!3rd_life:wear_helmet,scores={helmet=1}] run scoreboard players set @s helmet 0
+
+# Enable Life Gifting score
+execute as @a[scores={3rd_gift=0}] run scoreboard players enable @s 3rd_gift
+execute as @a[scores={3rd_gift=0}] run scoreboard players set @s 3rd_gift 1
+
+# Check for life gifting
+execute as @a[scores={3rd_gift=2}] run function 3rd_life:life_gift/life_gifting
