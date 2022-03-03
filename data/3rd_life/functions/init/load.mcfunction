@@ -7,7 +7,7 @@ scoreboard objectives add 3rd_death deathCount
 scoreboard objectives add 3rd_lives dummy
 scoreboard objectives add started dummy
 scoreboard objectives add helmet dummy
-scoreboard players set @a started 0
+scoreboard objectives add give_life dummy
 scoreboard players set @a helmet 0
 
 # Add teams
