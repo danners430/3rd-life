@@ -35,8 +35,8 @@ execute as @a[scores={3rd_gift=2}] run function 3rd_life:life_gift/life_gifting
 # Check for task time
 
 execute store result score time calc run time query daytime
-execute if score time calc matches 2000 run schedule function 3rd_life:task_management/end_of_day 1s
-execute if score time calc matches 2200 run schedule function 3rd_life:task_management/persistent_run 1s
+execute if score time calc matches 2000 run function 3rd_life:task_management/end_of_day
+execute if score time calc matches 2200 run function 3rd_life:task_management/persistent_run
 
 # Check for daily task completion
 

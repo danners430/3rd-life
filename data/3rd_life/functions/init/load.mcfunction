@@ -74,3 +74,7 @@ scoreboard objectives add 3rd_MineIron minecraft.mined:minecraft.iron_ore "Mine 
 scoreboard objectives add 3rd_MineRedstone minecraft.mined:minecraft.redstone_ore "Mine Redstone"
 scoreboard objectives add 3rd_MineGold minecraft.mined:minecraft.gold_ore "Mine Gold"
 scoreboard objectives add 3rd_PlayerKills minecraft.custom:minecraft.player_kills "Player Kills"
+
+execute store result score time calc run time query daytime
+execute if score time calc matches 2000 run time set 2001
+execute if score time calc matches 2200 run time set 2201
