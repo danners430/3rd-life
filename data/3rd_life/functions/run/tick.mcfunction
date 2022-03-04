@@ -1,7 +1,7 @@
 # Check death count, decrement lives and reset death counter
 
-execute as @a[scores={3rd_death=1..}] run scoreboard players remove @s 3rd_lives 1
-execute as @a[scores={3rd_death=1..}] run scoreboard players set @s 3rd_death 0
+#execute as @a[scores={3rd_death=1..}] run scoreboard players remove @s 3rd_lives 1
+#execute as @a[scores={3rd_death=1..}] run scoreboard players set @s 3rd_death 0
 
 # Change gamemode to spectator when player loses all their lives
 
