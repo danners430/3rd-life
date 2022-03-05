@@ -44,7 +44,7 @@ execute as @a[scores={3rd_daily_calc=16}] run function 3rd_life:task_management/
 execute as @a[scores={3rd_daily_calc=17}] run function 3rd_life:task_management/daily_tasks/sticky_situation
 execute as @a[scores={3rd_daily_calc=18}] run function 3rd_life:task_management/daily_tasks/ol_betsy
 execute as @a[scores={3rd_daily_calc=19}] run function 3rd_life:task_management/daily_tasks/hired_help
-execute as @a[scores={3rd_daily_calc=20}] run function 3rd_life:task_management/daily_tasks/sniper_dual
+execute as @a[scores={3rd_daily_calc=20}] run function 3rd_life:task_management/daily_tasks/sniper_duel
 
 title @a title {"text":"Your daily task is..."}
 
