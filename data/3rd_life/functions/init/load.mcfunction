@@ -74,3 +74,7 @@ scoreboard objectives add 3rd_VillagerTrades minecraft.custom:minecraft.traded_w
 execute store result score time calc run time query daytime
 execute if score time calc matches 2000 run time set 2001
 execute if score time calc matches 2200 run time set 2201
+
+# Delete old number markers
+
+kill @e[tag=NumberMarker]
