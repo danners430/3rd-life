@@ -1,22 +1,18 @@
 {
-  "parent": "minecraft:nether/root",
   "display": {
     "icon": {
       "item": "minecraft:fire_charge"
     },
     "title": {
-      "translate": "advancements.nether.return_to_sender.title"
+      "text": "Return To Sender"
     },
     "description": {
-      "translate": "advancements.nether.return_to_sender.description"
+      "text": ""
     },
     "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "rewards": {
-    "experience": 50
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
     "killed_ghast": {
@@ -25,10 +21,10 @@
         "entity": [
           {
             "condition": "minecraft:entity_properties",
+            "entity": "this",
             "predicate": {
               "type": "minecraft:ghast"
-            },
-            "entity": "this"
+            }
           }
         ],
         "killing_blow": {
@@ -44,5 +40,8 @@
     [
       "killed_ghast"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/persistent_tasks/return_to_sender"
+  }
 }

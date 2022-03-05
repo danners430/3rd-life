@@ -1,20 +1,19 @@
 {
-  "parent": "minecraft:adventure/root",
   "display": {
     "icon": {
       "item": "minecraft:crossbow",
       "nbt": "{Damage:0}"
     },
     "title": {
-      "translate": "advancements.adventure.ol_betsy.title"
+      "text": "Ol' Betsy"
     },
     "description": {
-      "translate": "advancements.adventure.ol_betsy.description"
+      "text": ""
     },
     "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
     "shot_crossbow": {
@@ -32,5 +31,8 @@
     [
       "shot_crossbow"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/daily_tasks/ol_betsy"
+  }
 }

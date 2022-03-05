@@ -1,19 +1,18 @@
 {
-  "parent": "minecraft:adventure/root",
   "display": {
     "icon": {
       "item": "minecraft:honey_block"
     },
     "title": {
-      "translate": "advancements.adventure.honey_block_slide.title"
+      "text": "Sticky Situation"
     },
     "description": {
-      "translate": "advancements.adventure.honey_block_slide.description"
+      "text": ""
     },
     "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
     "honey_block_slide": {
@@ -27,5 +26,8 @@
     [
       "honey_block_slide"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/daily_tasks/sticky_situation"
+  }
 }

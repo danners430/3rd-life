@@ -1,22 +1,18 @@
 {
-  "parent": "minecraft:nether/brew_potion",
   "display": {
     "icon": {
       "item": "minecraft:milk_bucket"
     },
     "title": {
-      "translate": "advancements.nether.all_potions.title"
+      "text": "Furious Cocktail"
     },
     "description": {
-      "translate": "advancements.nether.all_potions.description"
+      "text": ""
     },
     "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
-  },
-  "rewards": {
-    "experience": 100
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
     "all_effects": {
@@ -44,5 +40,8 @@
     [
       "all_effects"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/persistent_tasks/furious_cocktail"
+  }
 }

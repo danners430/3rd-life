@@ -1,24 +1,28 @@
 {
-  "parent": "minecraft:nether/obtain_crying_obsidian",
   "display": {
     "icon": {
       "item": "minecraft:respawn_anchor"
     },
     "title": {
-      "translate": "advancements.nether.charge_respawn_anchor.title"
+      "text": "Nine Lives"
     },
     "description": {
-      "translate": "advancements.nether.charge_respawn_anchor.description"
+      "text": ""
     },
     "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
     "charge_respawn_anchor": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
+        "item": {
+          "items": [
+            "minecraft:glowstone"
+          ]
+        },
         "location": {
           "block": {
             "blocks": [
@@ -28,11 +32,6 @@
               "charges": "4"
             }
           }
-        },
-        "item": {
-          "items": [
-            "minecraft:glowstone"
-          ]
         }
       }
     }
@@ -41,5 +40,8 @@
     [
       "charge_respawn_anchor"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/persistent_tasks/nine_lives"
+  }
 }

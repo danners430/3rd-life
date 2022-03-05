@@ -1,20 +1,20 @@
 {
-  "parent": "minecraft:nether/root",
   "display": {
     "icon": {
       "item": "minecraft:gold_ingot"
     },
     "title": {
-      "translate": "advancements.nether.distract_piglin.title"
+      "text": "Oh Shiny"
     },
     "description": {
-      "translate": "advancements.nether.distract_piglin.description"
+      "text": ""
     },
     "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
+  "parent": "minecraft:nether/root",
   "criteria": {
     "distract_piglin": {
       "trigger": "minecraft:thrown_item_picked_up_by_entity",
@@ -24,6 +24,7 @@
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:entity_properties",
+              "entity": "this",
               "predicate": {
                 "equipment": {
                   "head": {
@@ -32,14 +33,14 @@
                     ]
                   }
                 }
-              },
-              "entity": "this"
+              }
             }
           },
           {
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:entity_properties",
+              "entity": "this",
               "predicate": {
                 "equipment": {
                   "chest": {
@@ -48,14 +49,14 @@
                     ]
                   }
                 }
-              },
-              "entity": "this"
+              }
             }
           },
           {
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:entity_properties",
+              "entity": "this",
               "predicate": {
                 "equipment": {
                   "legs": {
@@ -64,14 +65,14 @@
                     ]
                   }
                 }
-              },
-              "entity": "this"
+              }
             }
           },
           {
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:entity_properties",
+              "entity": "this",
               "predicate": {
                 "equipment": {
                   "feet": {
@@ -80,26 +81,14 @@
                     ]
                   }
                 }
-              },
-              "entity": "this"
+              }
             }
           }
         ],
+        "entity": {},
         "item": {
           "tag": "minecraft:piglin_loved"
-        },
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-              "type": "minecraft:piglin",
-              "flags": {
-                "is_baby": false
-              }
-            },
-            "entity": "this"
-          }
-        ]
+        }
       }
     },
     "distract_piglin_directly": {
@@ -110,6 +99,7 @@
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:entity_properties",
+              "entity": "this",
               "predicate": {
                 "equipment": {
                   "head": {
@@ -118,14 +108,14 @@
                     ]
                   }
                 }
-              },
-              "entity": "this"
+              }
             }
           },
           {
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:entity_properties",
+              "entity": "this",
               "predicate": {
                 "equipment": {
                   "chest": {
@@ -134,14 +124,14 @@
                     ]
                   }
                 }
-              },
-              "entity": "this"
+              }
             }
           },
           {
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:entity_properties",
+              "entity": "this",
               "predicate": {
                 "equipment": {
                   "legs": {
@@ -150,14 +140,14 @@
                     ]
                   }
                 }
-              },
-              "entity": "this"
+              }
             }
           },
           {
             "condition": "minecraft:inverted",
             "term": {
               "condition": "minecraft:entity_properties",
+              "entity": "this",
               "predicate": {
                 "equipment": {
                   "feet": {
@@ -166,8 +156,7 @@
                     ]
                   }
                 }
-              },
-              "entity": "this"
+              }
             }
           }
         ],
@@ -179,13 +168,13 @@
         "entity": [
           {
             "condition": "minecraft:entity_properties",
+            "entity": "this",
             "predicate": {
               "type": "minecraft:piglin",
               "flags": {
                 "is_baby": false
               }
-            },
-            "entity": "this"
+            }
           }
         ]
       }
@@ -196,5 +185,8 @@
       "distract_piglin",
       "distract_piglin_directly"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/persistent_tasks/oh_shiny"
+  }
 }

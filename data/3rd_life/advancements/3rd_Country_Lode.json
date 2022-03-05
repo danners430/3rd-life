@@ -1,35 +1,34 @@
 {
-  "parent": "minecraft:nether/obtain_ancient_debris",
   "display": {
     "icon": {
       "item": "minecraft:lodestone"
     },
     "title": {
-      "translate": "advancements.nether.use_lodestone.title"
+      "text": "Country Lode"
     },
     "description": {
-      "translate": "advancements.nether.use_lodestone.description"
+      "text": ""
     },
     "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
     "use_lodestone": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
+        "item": {
+          "items": [
+            "minecraft:compass"
+          ]
+        },
         "location": {
           "block": {
             "blocks": [
               "minecraft:lodestone"
             ]
           }
-        },
-        "item": {
-          "items": [
-            "minecraft:compass"
-          ]
         }
       }
     }
@@ -38,5 +37,8 @@
     [
       "use_lodestone"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/persistent_tasks/country_lode"
+  }
 }

@@ -1,19 +1,18 @@
 {
-  "parent": "minecraft:story/enter_the_nether",
   "display": {
     "icon": {
       "item": "minecraft:golden_apple"
     },
     "title": {
-      "translate": "advancements.story.cure_zombie_villager.title"
+      "text": "Zombie Doctor"
     },
     "description": {
-      "translate": "advancements.story.cure_zombie_villager.description"
+      "text": ""
     },
     "frame": "goal",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
     "cured_zombie": {
@@ -25,5 +24,8 @@
     [
       "cured_zombie"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/persistent_tasks/zombie_doctor"
+  }
 }

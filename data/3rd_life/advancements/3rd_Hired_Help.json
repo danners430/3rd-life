@@ -1,20 +1,20 @@
 {
-  "parent": "minecraft:adventure/trade",
   "display": {
     "icon": {
       "item": "minecraft:carved_pumpkin"
     },
     "title": {
-      "translate": "advancements.adventure.summon_iron_golem.title"
+      "text": "Hired Help"
     },
     "description": {
-      "translate": "advancements.adventure.summon_iron_golem.description"
+      "text": ""
     },
     "frame": "goal",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
+  "parent": "minecraft:adventure/trade",
   "criteria": {
     "summoned_golem": {
       "trigger": "minecraft:summoned_entity",
@@ -22,10 +22,10 @@
         "entity": [
           {
             "condition": "minecraft:entity_properties",
+            "entity": "this",
             "predicate": {
               "type": "minecraft:iron_golem"
-            },
-            "entity": "this"
+            }
           }
         ]
       }
@@ -35,5 +35,8 @@
     [
       "summoned_golem"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/faily_tasks/hired_help"
+  }
 }

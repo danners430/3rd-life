@@ -1,19 +1,18 @@
 {
-  "parent": "minecraft:nether/find_fortress",
   "display": {
     "icon": {
       "item": "minecraft:wither_skeleton_skull"
     },
     "title": {
-      "translate": "advancements.nether.get_wither_skull.title"
+      "text": "Spooky Skeleton"
     },
     "description": {
-      "translate": "advancements.nether.get_wither_skull.description"
+      "text": ""
     },
     "frame": "task",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
   },
   "criteria": {
     "wither_skull": {
@@ -33,5 +32,8 @@
     [
       "wither_skull"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "3rd_life:task_management/persistent_tasks/spooky_scary_skeleton"
+  }
 }
