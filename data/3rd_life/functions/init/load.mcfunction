@@ -1,4 +1,5 @@
 # Set worldborder
+
 worldborder center ~ ~
 worldborder set 700
 
@@ -18,8 +19,7 @@ scoreboard objectives add 3rd_persistent_calc dummy
 scoreboard objectives add 3rd_persistent dummy
 
 # Add teams
-# team add 3rd_full
-# team modify 3rd_full color gold
+
 team add 3rd_extra
 team modify 3rd_extra color dark_green
 team add 3rd_green
