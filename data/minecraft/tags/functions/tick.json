@@ -1,6 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"3rd_life:run/tick"
+		"task_life:run/tick"
 	]
 }
