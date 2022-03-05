@@ -40,18 +40,18 @@ execute if score time calc matches 2200 run function 3rd_life:task_management/pe
 
 # Check for daily task completion
 
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=1,3rd_PlayerKills=1}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=2,3rd_KillBat=3}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=3,3rd_KillChicken=5}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=4,3rd_KillCow=5}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=5,3rd_KillSheep=5}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=6,3rd_KillZombie=1}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=7,3rd_KillCreeper=1}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=8,3rd_KillSkeleton=1}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=9,3rd_KillSpider=1}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=10,3rd_AnimalsBred=5}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=11,3rd_FishCaught=3}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=12,3rd_MineCoal=10}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=13,3rd_MineIron=10}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=14,3rd_MineRedstone=5}] run function 3rd_life:task_management/task_complete
-execute as @a[scores={3rd_daily=1,3rd_daily_calc=15,3rd_MineGold=5}] run function 3rd_life:task_management/task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=1,3rd_PlayerKills=1}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=2,3rd_KillBat=3}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=3,3rd_KillChicken=5}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=4,3rd_KillCow=5}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=5,3rd_KillSheep=5}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=6,3rd_KillZombie=1}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=7,3rd_KillCreeper=1}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=8,3rd_KillSkeleton=1}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=9,3rd_KillSpider=1}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=10,3rd_AnimalsBred=5}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=11,3rd_FishCaught=3}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=12,3rd_MineCoal=10}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=13,3rd_MineIron=10}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=14,3rd_MineRedstone=5}] run function 3rd_life:task_management/daily_task_complete
+execute as @a[scores={3rd_daily=1,3rd_daily_calc=15,3rd_MineGold=5}] run function 3rd_life:task_management/daily_task_complete

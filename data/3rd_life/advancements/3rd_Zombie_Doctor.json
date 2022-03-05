@@ -26,6 +26,6 @@
     ]
   ],
   "rewards": {
-    "function": "3rd_life:task_management/persistent_tasks/zombie_doctor_complete"
+    "function": "3rd_life:task_management/persistent_task_complete"
   }
 }

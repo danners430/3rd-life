@@ -34,6 +34,6 @@
     ]
   ],
   "rewards": {
-    "function": "3rd_life:task_management/persistent_tasks/spooky_scary_skeleton_complete"
+    "function": "3rd_life:task_management/persistent_task_complete"
   }
 }

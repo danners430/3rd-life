@@ -33,6 +33,6 @@
     ]
   ],
   "rewards": {
-    "function": "3rd_life:task_management/daily_tasks/ol_betsy_complete"
+    "function": "3rd_life:task_management/daily_task_complete"
   }
 }

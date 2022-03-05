@@ -187,6 +187,6 @@
     ]
   ],
   "rewards": {
-    "function": "3rd_life:task_management/persistent_tasks/oh_shiny_complete"
+    "function": "3rd_life:task_management/persistent_task_complete"
   }
 }
