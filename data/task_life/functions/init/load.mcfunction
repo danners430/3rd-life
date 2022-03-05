@@ -6,7 +6,7 @@ worldborder set 700
 # Add working objectives
 
 scoreboard objectives add tl_death deathCount
-scoreboard objectives add tl_lives dummy
+scoreboard objectives add tl_lives dummy "Lives"
 scoreboard objectives add tl_gift trigger
 scoreboard objectives add tl_started dummy
 scoreboard objectives add tl_helmet dummy
