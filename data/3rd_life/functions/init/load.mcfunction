@@ -2,7 +2,8 @@
 worldborder center ~ ~
 worldborder set 700
 
-# Add objectives
+# Add working objectives
+
 scoreboard objectives add 3rd_death deathCount
 scoreboard objectives add 3rd_lives dummy
 scoreboard objectives add 3rd_gift trigger
@@ -35,30 +36,24 @@ team modify 3rd_died prefix ["",{"text": "["},{"text": "DIED","color": "gray"},{
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 
-# Add daily task scoreboards
-
-scoreboard objectives add 3rd_hunter dummy
-scoreboard objectives add 3rd_bats dummy
-scoreboard objectives add 3rd_chickens dummy
-scoreboard objectives add 3rd_cows dummy
-scoreboard objectives add 3rd_sheep dummy
-scoreboard objectives add 3rd_zombie dummy
-scoreboard objectives add 3rd_creeper dummy
-scoreboard objectives add 3rd_skeleton dummy
-scoreboard objectives add 3rd_spider dummy
-scoreboard objectives add 3rd_breed dummy
-scoreboard objectives add 3rd_fish dummy
-scoreboard objectives add 3rd_coal dummy
-scoreboard objectives add 3rd_iron dummy
-scoreboard objectives add 3rd_redstone dummy
-scoreboard objectives add 3rd_gold dummy
-
 # Add persistent task scoreboards
 
+scoreboard objectives add 3rd_BreakDiamondPick minecraft.broken:minecraft.diamond_pickaxe "Diamond Pickaxes Broken"
+scoreboard objectives add 3rd_CraftEnchantingTable minecraft.crafted:minecraft.enchanting_table "Enchanting Tables Crafted"
+scoreboard objectives add 3rd_CraftNetheriteBlock minecraft.crafted:minecraft.netherite_block "Netherrite Blocks Crafted"
+scoreboard objectives add 3rd_KillCreepers minecraft.killed:minecraft.creeper "Creepers Killed"
+scoreboard objectives add 3rd_KillWitherSkeletons minecraft.killed:minecraft.wither_skeleton "Wither Skeletons Killed"
+scoreboard objectives add 3rd_MineDiamond minecraft.mined:minecraft.diamond_ore "Diamonds Mined"
+scoreboard objectives add 3rd_MineObsidian minecraft.mined:minecraft.obsidian "Obsidian Mined"
+scoreboard objectives add 3rd_RaidsWon minecraft.custom:minecraft.raid_win "Raids Won"
+scoreboard objectives add 3rd_RecordPlayed minecraft.custom:minecraft.play_record "Records Played"
+scoreboard objectives add 3rd_PotionsUsed minecraft.used:minecraft.potion "Potions Used"
+scoreboard objectives add 3rd_WalkWhileCrouched minecraft.custom:minecraft.crouch_one_cm "Distance While Crouched"
 
+# Add daily objective stats
 
-# Add stat objectives
-
+scoreboard objectives add 3rd_AnimalsBred minecraft.custom:minecraft.animals_bred "Animals Bred"
+scoreboard objectives add 3rd_FishCaught minecraft.custom:minecraft.fish_caught "Fish Caught"
 scoreboard objectives add 3rd_KillBat minecraft.killed:minecraft.bat "Kill Bat"
 scoreboard objectives add 3rd_KillChicken minecraft.killed:minecraft.chicken "Kill Chicken"
 scoreboard objectives add 3rd_KillCow minecraft.killed:minecraft.cow "Kill Cow"
@@ -67,13 +62,14 @@ scoreboard objectives add 3rd_KillZombie minecraft.killed:minecraft.zombie "Kill
 scoreboard objectives add 3rd_KillCreeper minecraft.killed:minecraft.creeper "Kill Creeper"
 scoreboard objectives add 3rd_KillSkeleton minecraft.killed:minecraft.skeleton "Kill Skeleton"
 scoreboard objectives add 3rd_KillSpider minecraft.killed:minecraft.spider "Kill Spider"
-scoreboard objectives add 3rd_AnimalsBred minecraft.custom:minecraft.animals_bred "Animals Bred"
-scoreboard objectives add 3rd_FishCaught minecraft.custom:minecraft.fish_caught "Fish Caught"
 scoreboard objectives add 3rd_MineCoal minecraft.mined:minecraft.coal_ore "Mine Coal"
 scoreboard objectives add 3rd_MineIron minecraft.mined:minecraft.iron_ore "Mine Iron"
 scoreboard objectives add 3rd_MineRedstone minecraft.mined:minecraft.redstone_ore "Mine Redstone"
 scoreboard objectives add 3rd_MineGold minecraft.mined:minecraft.gold_ore "Mine Gold"
 scoreboard objectives add 3rd_PlayerKills minecraft.custom:minecraft.player_kills "Player Kills"
+scoreboard objectives add 3rd_VillagerTrades minecraft.custom:minecraft.traded_with_villager "Traded With Villagers"
+
+# Prevent infinite loops
 
 execute store result score time calc run time query daytime
 execute if score time calc matches 2000 run time set 2001
