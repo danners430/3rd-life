@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_apple"
+    },
+    "title": {
+      "text": "Zombie Doctor"
+    },
+    "description": {
+      "text": ""
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "cured_zombie": {
+      "trigger": "minecraft:cured_zombie_villager",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "cured_zombie"
+    ]
+  ],
+  "rewards": {
+    "function": "task_life:task_management/persistent_task_complete"
+  }
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Check death count, decrement lives and reset death counter
 execute as @a[scores={3rd_death=1..}] run scoreboard players remove @s 3rd_lives 1
 execute as @a[scores={3rd_death=1..}] run scoreboard players set @s 3rd_death 0
@@ -31,3 +32,20 @@ execute as @a[scores={3rd_gift=2}] run function 3rd_life:life_gift/life_gifting
 
 execute store result score time calc run time query daytime
 execute if score time calc matches 2000 run function 3rd_life:task_management/end_of_day
+=======
+# Run life tracking
+
+function task_life:run/track_lives
+
+# Run helmet checker
+
+function task_life:run/check_helmet
+
+# Run life gifting
+
+function task_life:run/life_gifting
+
+# Run task management
+
+function task_life:task_management/task_manager
+>>>>>>> 1d5d0e2d0e6da6a4314106fef8ed2e1f00b4a82e

@@ -39,6 +39,7 @@ execute as @a[scores={tl_persistent=1,tl_persistent_calc=7,tl_CraftNetheriteBloc
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=8,tl_BreakDiamondPick=1}] run function task_life:task_management/persistent_task_complete
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=9,tl_KillWitherSkeletons=10}] run function task_life:task_management/persistent_task_complete
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=10,tl_KillCreepers=10}] run function task_life:task_management/persistent_task_complete
+<<<<<<< HEAD
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=11,tl_PotionsUsed=10}] run function task_life:task_management/persistent_task_complete
 
 
@@ -54,3 +55,6 @@ execute as @a[scores={tl_PersistentTask=0}] run scoreboard players set @s tl_Per
 
 execute as @a[scores={tl_DailyTask=2}] run function task_life:task_management/display_daily
 execute as @a[scores={tl_PersistentTask=2}] run function task_life:task_management/display_persistent
+=======
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=11,tl_PotionsUsed=10}] run function task_life:task_management/persistent_task_complete
+>>>>>>> 1d5d0e2d0e6da6a4314106fef8ed2e1f00b4a82e

@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:milk_bucket"
+    },
+    "title": {
+      "text": "Furious Cocktail"
+    },
+    "description": {
+      "text": ""
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "all_effects": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:speed": {},
+          "minecraft:slowness": {},
+          "minecraft:strength": {},
+          "minecraft:jump_boost": {},
+          "minecraft:regeneration": {},
+          "minecraft:fire_resistance": {},
+          "minecraft:water_breathing": {},
+          "minecraft:invisibility": {},
+          "minecraft:night_vision": {},
+          "minecraft:weakness": {},
+          "minecraft:poison": {},
+          "minecraft:slow_falling": {},
+          "minecraft:resistance": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "all_effects"
+    ]
+  ],
+  "rewards": {
+    "function": "task_life:task_management/persistent_task_complete"
+  }
+}
