@@ -44,6 +44,6 @@
     ]
   ],
   "rewards": {
-    "function": "3rd_life:task_management/daily_tasks/sniper_dual"
+    "function": "3rd_life:task_management/daily_tasks/sniper_duel_complete"
   }
 }

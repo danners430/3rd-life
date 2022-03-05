@@ -37,6 +37,6 @@
     ]
   ],
   "rewards": {
-    "function": "3rd_life:task_management/faily_tasks/hired_help"
+    "function": "3rd_life:task_management/daily_tasks/hired_help_complete"
   }
 }

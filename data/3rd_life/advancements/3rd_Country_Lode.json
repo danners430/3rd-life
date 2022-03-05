@@ -39,6 +39,6 @@
     ]
   ],
   "rewards": {
-    "function": "3rd_life:task_management/persistent_tasks/country_lode"
+    "function": "3rd_life:task_management/persistent_tasks/country_lode_complete"
   }
 }
