@@ -1,3 +1,7 @@
+# Summon number markers - 3 markers with "1" to encourage hunters to be created
+
+summon marker ~ ~ ~ {data:{RandomNumber:1}, Tags:["NumberMarker"]}
+summon marker ~ ~ ~ {data:{RandomNumber:1}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:1}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:2}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:3}, Tags:["NumberMarker"]}
@@ -13,6 +17,11 @@ summon marker ~ ~ ~ {data:{RandomNumber:12}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:13}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:14}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:15}, Tags:["NumberMarker"]}
+summon marker ~ ~ ~ {data:{RandomNumber:16}, Tags:["NumberMarker"]}
+summon marker ~ ~ ~ {data:{RandomNumber:17}, Tags:["NumberMarker"]}
+summon marker ~ ~ ~ {data:{RandomNumber:18}, Tags:["NumberMarker"]}
+summon marker ~ ~ ~ {data:{RandomNumber:19}, Tags:["NumberMarker"]}
+summon marker ~ ~ ~ {data:{RandomNumber:20}, Tags:["NumberMarker"]}
 
 execute as @a store result score @s 3rd_daily_calc run data get entity @e[type=marker,tag=NumberMarker,sort=random,limit=1] data.RandomNumber
 
@@ -31,6 +40,11 @@ execute as @a[scores={3rd_daily_calc=12}] run function 3rd_life:task_management/
 execute as @a[scores={3rd_daily_calc=13}] run function 3rd_life:task_management/daily_tasks/iron
 execute as @a[scores={3rd_daily_calc=14}] run function 3rd_life:task_management/daily_tasks/redstone
 execute as @a[scores={3rd_daily_calc=15}] run function 3rd_life:task_management/daily_tasks/gold
+execute as @a[scores={3rd_daily_calc=16}] run function 3rd_life:task_management/daily_tasks/trade
+execute as @a[scores={3rd_daily_calc=17}] run function 3rd_life:task_management/daily_tasks/sticky_situation
+execute as @a[scores={3rd_daily_calc=18}] run function 3rd_life:task_management/daily_tasks/ol_betsy
+execute as @a[scores={3rd_daily_calc=19}] run function 3rd_life:task_management/daily_tasks/hired_help
+execute as @a[scores={3rd_daily_calc=20}] run function 3rd_life:task_management/daily_tasks/sniper_dual
 
 title @a title {"text":"Your daily task is..."}
 
