@@ -16,6 +16,11 @@ schedule function 3rd_life:init/start_1 8s
 schedule function 3rd_life:init/start_run 10s
 schedule function 3rd_life:init/start_shuffle 13s
 
+# Set the time to 2001 ticks and schedule the day to begin in 5 minutes
+
 time set 2001
 schedule function 3rd_life:task_management/daily_run 300s
+
+# Start weather
+
 gamerule doWeatherCycle true
