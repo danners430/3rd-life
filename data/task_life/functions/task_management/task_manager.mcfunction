@@ -48,7 +48,7 @@ execute as @a[scores={tl_DailyTask=0}] run scoreboard players set @s tl_DailyTas
 execute as @a[scores={tl_PersistentTask=0}] run scoreboard players enable @s tl_PersistentTask
 execute as @a[scores={tl_PersistentTask=0}] run scoreboard players set @s tl_PersistentTask 1
 
-# Check for life gifting
+# Check for task checking
 
 execute as @a[scores={tl_DailyTask=2}] run function task_life:task_management/display_daily
 execute as @a[scores={tl_PersistentTask=2}] run function task_life:task_management/display_persistent
