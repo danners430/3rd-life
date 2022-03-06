@@ -7,6 +7,7 @@ summon marker ~ ~ ~ {data:{RandomNumber:6}, Tags:["NumberMarker"]}
 
 # Randomly assign players a life count based on available markers
 
+scoreboard players set @s tl_lives 0
 execute as @a store result score @s tl_lives run data get entity @e[type=marker,tag=NumberMarker,sort=random,limit=1] data.RandomNumber
 
 # Remove markers
