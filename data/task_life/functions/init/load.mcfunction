@@ -17,8 +17,8 @@ scoreboard objectives add tl_daily_calc dummy
 scoreboard objectives add tl_daily dummy
 scoreboard objectives add tl_persistent_calc dummy
 scoreboard objectives add tl_persistent dummy
-scoreboard objectives add tl_DailyTask dummy "Daily Task"
-scoreboard objectives add tl_PersistentTask dummy "Persistent Task"
+scoreboard objectives add tl_DailyTask trigger "Daily Task"
+scoreboard objectives add tl_PersistentTask trigger "Persistent Task"
 
 # Add teams
 

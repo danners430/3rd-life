@@ -26,3 +26,9 @@ schedule function task_life:task_management/daily_run 300s
 # Start weather
 
 gamerule doWeatherCycle true
+
+# Enable triggers
+
+scoreboard players set @a tl_gift 0
+scoreboard players set @a tl_DailyTask 0
+scoreboard players set @a tl_PersistentTask 0
