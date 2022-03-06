@@ -8,11 +8,8 @@ worldborder set 700
 scoreboard objectives add tl_death deathCount
 scoreboard objectives add tl_lives dummy "Lives"
 scoreboard objectives add tl_gift trigger
-scoreboard objectives add tl_started dummy
 scoreboard objectives add tl_helmet dummy
 scoreboard objectives add calc dummy
-scoreboard players set @a tl_started 0
-scoreboard players set @a tl_helmet 0
 scoreboard objectives add tl_daily_calc dummy
 scoreboard objectives add tl_daily dummy
 scoreboard objectives add tl_persistent_calc dummy

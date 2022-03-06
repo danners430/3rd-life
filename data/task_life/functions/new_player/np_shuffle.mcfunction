@@ -19,8 +19,11 @@ kill @e[tag=NumberMarker]
 title @s[scores={tl_lives=3}] title [{"text": "You have... "},{"score":{"name":"*","objective":"tl_lives"},"bold":true,"color":"green"},{"text":" lives!","bold":true,"color":"dark_green"}]
 title @s[scores={tl_lives=4..}] title [{"text": "You have... "},{"score":{"name":"*","objective":"tl_lives"},"bold":true,"color":"dark_green"},{"text":" lives!","bold":true,"color":"green"}]
 
-# Enable triggers
+# Enable scoreboards
 
 scoreboard players set @s tl_gift 0
 scoreboard players set @s tl_DailyTask 0
 scoreboard players set @s tl_PersistentTask 0
+scoreboard players set @s tl_daily 0
+scoreboard players set @s tl_persistent 0
+scoreboard players set @s tl_helmet 0

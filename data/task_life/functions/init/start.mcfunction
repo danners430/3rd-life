@@ -1,7 +1,3 @@
-# mark game as started
-
-scoreboard players set @a tl_started 1
-
 # initialize death score
 
 scoreboard players set @a tl_death 0
@@ -27,8 +23,11 @@ schedule function task_life:task_management/daily_run 300s
 
 gamerule doWeatherCycle true
 
-# Enable triggers
+# Enable scoreboards
 
 scoreboard players set @a tl_gift 0
 scoreboard players set @a tl_DailyTask 0
 scoreboard players set @a tl_PersistentTask 0
+scoreboard players set @a tl_daily 0
+scoreboard players set @a tl_persistent 0
+scoreboard players set @a tl_helmet 0
