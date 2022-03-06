@@ -23,6 +23,7 @@ summon marker ~ ~ ~ {data:{RandomNumber:18}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:19}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:20}, Tags:["NumberMarker"]}
 
+scoreboard players set @a tl_daily_calc 0
 execute as @a store result score @s tl_daily_calc run data get entity @e[type=marker,tag=NumberMarker,sort=random,limit=1] data.RandomNumber
 
 execute as @a[scores={tl_daily_calc=1}] run function task_life:task_management/daily_tasks/hunter

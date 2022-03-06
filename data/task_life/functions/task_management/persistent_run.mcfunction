@@ -20,6 +20,7 @@ summon marker ~ ~ ~ {data:{RandomNumber:17}, Tags:["NumberMarker"]}
 
 # Randomly assign a new task to everyone who doesn't already have a persistent task
 
+scoreboard players set @a tl_persistent_calc 0
 execute as @a[scores={tl_persistent=0}] store result score @s tl_persistent_calc run data get entity @e[type=marker,tag=NumberMarker,sort=random,limit=1] data.RandomNumber
 
 # Run the start function for the people with new tasks
