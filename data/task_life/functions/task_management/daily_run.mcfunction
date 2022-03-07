@@ -26,6 +26,11 @@ summon marker ~ ~ ~ {data:{RandomNumber:20}, Tags:["NumberMarker"]}
 scoreboard players set @a tl_daily_calc 0
 execute as @a store result score @s tl_daily_calc run data get entity @e[type=marker,tag=NumberMarker,sort=random,limit=1] data.RandomNumber
 
+execute as @a[scores={tl_daily=0}] run advancement grant @s only task_life:tl_sticky_situation
+execute as @a[scores={tl_daily=0}] run advancement grant @s only task_life:tl_ol_betsy
+execute as @a[scores={tl_daily=0}] run advancement grant @s only task_life:tl_hired_help
+execute as @a[scores={tl_daily=0}] run advancement grant @s only task_life:tl_sniper_duel
+
 execute as @a[scores={tl_daily_calc=1}] run function task_life:task_management/daily_tasks/hunter
 execute as @a[scores={tl_daily_calc=2}] run function task_life:task_management/daily_tasks/bats
 execute as @a[scores={tl_daily_calc=3}] run function task_life:task_management/daily_tasks/chickens
