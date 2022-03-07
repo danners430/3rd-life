@@ -13,3 +13,10 @@ team join tl_extra @a[scores={tl_lives=4..},team=!tl_extra]
 # Auto-revoke death advancement
 
 advancement revoke @a only task_life:tl_death
+
+# Set red lives to have no tasks
+
+scoreboard players set @a[scores={tl_lives=..1}] tl_persistent 0
+scoreboard players set @a[scores={tl_lives=..1}] tl_persistent_calc 0
+scoreboard players set @a[scores={tl_lives=..1}] tl_daily 0
+scoreboard players set @a[scores={tl_lives=..1}] tl_daily_calc 0

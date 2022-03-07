@@ -24,7 +24,7 @@ summon marker ~ ~ ~ {data:{RandomNumber:19}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:20}, Tags:["NumberMarker"]}
 
 scoreboard players set @a tl_daily_calc 0
-execute as @a store result score @s tl_daily_calc run data get entity @e[type=marker,tag=NumberMarker,sort=random,limit=1] data.RandomNumber
+execute as @a[scores={tl_lives=2..}] store result score @s tl_daily_calc run data get entity @e[type=marker,tag=NumberMarker,sort=random,limit=1] data.RandomNumber
 
 execute as @a[scores={tl_daily=0}] run advancement grant @s only task_life:tl_sticky_situation
 execute as @a[scores={tl_daily=0}] run advancement grant @s only task_life:tl_ol_betsy
@@ -52,6 +52,6 @@ execute as @a[scores={tl_daily_calc=18}] run function task_life:task_management/
 execute as @a[scores={tl_daily_calc=19}] run function task_life:task_management/daily_tasks/hired_help
 execute as @a[scores={tl_daily_calc=20}] run function task_life:task_management/daily_tasks/sniper_duel
 
-title @a title {"text":"Your daily task is..."}
+title @a[scores={tl_daily=1}] title {"text":"Your daily task is..."}
 
 gamerule doDaylightCycle true
