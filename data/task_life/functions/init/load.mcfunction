@@ -43,6 +43,7 @@ scoreboard objectives add tl_CraftNetheriteBlock minecraft.crafted:minecraft.net
 scoreboard objectives add tl_KillCreepers minecraft.killed:minecraft.creeper "Creepers Killed"
 scoreboard objectives add tl_KillWitherSkeletons minecraft.killed:minecraft.wither_skeleton "Wither Skeletons Killed"
 scoreboard objectives add tl_MineDiamond minecraft.mined:minecraft.diamond_ore "Diamonds Mined"
+scoreboard objectives add tl_MineDeepDiamond minecraft.mined:minecraft.deepslate_diamond_ore
 scoreboard objectives add tl_MineObsidian minecraft.mined:minecraft.obsidian "Obsidian Mined"
 scoreboard objectives add tl_RaidsWon minecraft.custom:minecraft.raid_win "Raids Won"
 scoreboard objectives add tl_RecordPlayed minecraft.custom:minecraft.play_record "Records Played"
@@ -62,9 +63,13 @@ scoreboard objectives add tl_KillCreeper minecraft.killed:minecraft.creeper "Kil
 scoreboard objectives add tl_KillSkeleton minecraft.killed:minecraft.skeleton "Kill Skeleton"
 scoreboard objectives add tl_KillSpider minecraft.killed:minecraft.spider "Kill Spider"
 scoreboard objectives add tl_MineCoal minecraft.mined:minecraft.coal_ore "Mine Coal"
+scoreboard objectives add tl_MineDeepCoal minecraft.mined:minecraft.deepslate_coal_ore
 scoreboard objectives add tl_MineIron minecraft.mined:minecraft.iron_ore "Mine Iron"
+scoreboard objectives add tl_MineDeepIron minecraft.mined:minecraft.deepslate_iron_ore
 scoreboard objectives add tl_MineRedstone minecraft.mined:minecraft.redstone_ore "Mine Redstone"
+scoreboard objectives add tl_MineDeepRedstone minecraft.mined:minecraft.deepslate_redstone_ore
 scoreboard objectives add tl_MineGold minecraft.mined:minecraft.gold_ore "Mine Gold"
+scoreboard objectives add tl_MineDeepGold minecraft.mined:minecraft.deepslate_gold_ore
 scoreboard objectives add tl_PlayerKills minecraft.custom:minecraft.player_kills "Player Kills"
 scoreboard objectives add tl_VillagerTrades minecraft.custom:minecraft.traded_with_villager "Traded With Villagers"
 

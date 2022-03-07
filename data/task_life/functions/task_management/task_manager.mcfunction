@@ -4,6 +4,19 @@ execute store result score time calc run time query daytime
 execute if score time calc matches 2000 run function task_life:task_management/end_of_day
 execute if score time calc matches 2200 run function task_life:task_management/persistent_run
 
+# Add deepslate totals to normal totals
+
+execute as @a run scoreboard players operation @s tl_MineCoal += @s tl_MineDeepCoal
+execute as @a run scoreboard players operation @s tl_MineIron += @s tl_MineDeepIron
+execute as @a run scoreboard players operation @s tl_MineRedstone += @s tl_MineDeepRedstone
+execute as @a run scoreboard players operation @s tl_MineGold += @s tl_MineDeepGold
+execute as @a run scoreboard players operation @s tl_MineDiamond += @s tl_MineDeepDiamond
+scoreboard players set @a tl_MineDeepCoal 0
+scoreboard players set @a tl_MineDeepIron 0
+scoreboard players set @a tl_MineDeepRedstone 0
+scoreboard players set @a tl_MineDeepGold 0
+scoreboard players set @a tl_MineDeepDiamond 0
+
 # Check for daily task completion
 # Functions only run when:
 # • Player has not yet completed the task

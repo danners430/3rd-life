@@ -9,8 +9,8 @@ schedule function task_life:task_management/daily_run 300s
 
 # Send players who have completed their daily tasks to the success function, and those who haven't to the failure function
 
-execute as @a[scores={tl_daily=0}] run function task_life:task_management/daily_success
-execute as @a[scores={tl_daily=1}] run function task_life:task_management/daily_fail
+execute as @a[scores={tl_daily=0,tl_lives=2..}] run function task_life:task_management/daily_success
+execute as @a[scores={tl_daily=1,tl_lives=2..}] run function task_life:task_management/daily_fail
 
 # Show title with subtitles from daily functions
 

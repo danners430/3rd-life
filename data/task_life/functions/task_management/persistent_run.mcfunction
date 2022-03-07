@@ -20,8 +20,18 @@ summon marker ~ ~ ~ {data:{RandomNumber:17}, Tags:["NumberMarker"]}
 
 # Randomly assign a new task to everyone who doesn't already have a persistent task
 
-scoreboard players set @a tl_persistent_calc 0
+scoreboard players set @a[scores={tl_persistent=0}] tl_persistent_calc 0
 execute as @a[scores={tl_persistent=0}] store result score @s tl_persistent_calc run data get entity @e[type=marker,tag=NumberMarker,sort=random,limit=1] data.RandomNumber
+
+# Grant all persistent advancements to people who don't have persistent task
+
+execute as @a[scores={tl_persistent=0}] run advancement grant @s only task_life:tl_return_to_sender
+execute as @a[scores={tl_persistent=0}] run advancement grant @s only task_life:tl_zombie_doctor
+execute as @a[scores={tl_persistent=0}] run advancement grant @s only task_life:tl_oh_shiny
+execute as @a[scores={tl_persistent=0}] run advancement grant @s only task_life:tl_country_lode
+execute as @a[scores={tl_persistent=0}] run advancement grant @s only task_life:tl_spooky_skeleton
+execute as @a[scores={tl_persistent=0}] run advancement grant @s only task_life:tl_furious_cocktail
+execute as @a[scores={tl_persistent=0}] run advancement grant @s only task_life:tl_nine_lives
 
 # Run the start function for the people with new tasks
 
