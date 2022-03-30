@@ -38,7 +38,6 @@ execute as @a[scores={tl_daily=1,tl_daily_calc=12,tl_MineCoal=10..}] run functio
 execute as @a[scores={tl_daily=1,tl_daily_calc=13,tl_MineIron=10..}] run function task_life:task_management/daily_task_complete
 execute as @a[scores={tl_daily=1,tl_daily_calc=14,tl_MineRedstone=5..}] run function task_life:task_management/daily_task_complete
 execute as @a[scores={tl_daily=1,tl_daily_calc=15,tl_MineGold=5..}] run function task_life:task_management/daily_task_complete
-execute as @a[scores={tl_daily=1,tl_daily_calc=16,tl_VillagerTrades=1..}] run function task_life:task_management/daily_task_complete
 
 # Check for persistent task completion
 
@@ -53,6 +52,7 @@ execute as @a[scores={tl_persistent=1,tl_persistent_calc=8,tl_BreakDiamondPick=1
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=9,tl_KillWitherSkeletons=10..}] run function task_life:task_management/persistent_task_complete
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=10,tl_KillCreepers=10..}] run function task_life:task_management/persistent_task_complete
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=11,tl_PotionsUsed=10..}] run function task_life:task_management/persistent_task_complete
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_VillagerTrades=1..}] run function task_life:task_management/persistent_task_complete
 
 # Enable task checking scores
 
