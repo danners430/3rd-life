@@ -17,6 +17,8 @@ summon marker ~ ~ ~ {data:{RandomNumber:14}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:15}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:16}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:17}, Tags:["NumberMarker"]}
+summon marker ~ ~ ~ {data:{RandomNumber:18}, Tags:["NumberMarker"]}
+summon marker ~ ~ ~ {data:{RandomNumber:19}, Tags:["NumberMarker"]}
 
 # Randomly assign a new task to everyone who doesn't already have a persistent task
 
@@ -53,6 +55,7 @@ execute as @a[scores={tl_persistent_calc=15,tl_persistent=0}] run function task_
 execute as @a[scores={tl_persistent_calc=16,tl_persistent=0}] run function task_life:task_management/persistent_tasks/spooky_scary_skeleton
 execute as @a[scores={tl_persistent_calc=17,tl_persistent=0}] run function task_life:task_management/persistent_tasks/furious_cocktail
 execute as @a[scores={tl_persistent_calc=18,tl_persistent=0}] run function task_life:task_management/persistent_tasks/nine_lives
+execute as @a[scores={tl_persistent_calc=19,tl_persistent=0}] run function task_life:task_management/persistent_tasks/all_ores
 
 # Show title
 
