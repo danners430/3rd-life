@@ -39,6 +39,29 @@ execute as @a[scores={tl_daily=1,tl_daily_calc=13,tl_MineIron=10..}] run functio
 execute as @a[scores={tl_daily=1,tl_daily_calc=14,tl_MineRedstone=5..}] run function task_life:task_management/daily_task_complete
 execute as @a[scores={tl_daily=1,tl_daily_calc=15,tl_MineGold=5..}] run function task_life:task_management/daily_task_complete
 
+# Check for all ores
+
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_stCoal=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_dsCoal=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_stCopper=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_dsCopper=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_stLapis=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_dsLapis=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_stIron=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_dsIron=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_stCopper=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_stGold=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_dsGold=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_stRedstone=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_dsRedstone=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_stDiamond=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_dsDiamond=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_stEmerald=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_dsEmerald=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_ntQuartz=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_ntGold=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores_nt_Netherite=1}] run function task_life:task_management/persistent_tasks/all_ores/all_ores_checker
+
 # Check for persistent task completion
 
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=1,tl_CraftEnchantingTable=1..}] run function task_life:task_management/persistent_task_complete
@@ -51,8 +74,9 @@ execute as @a[scores={tl_persistent=1,tl_persistent_calc=7,tl_CraftNetheriteBloc
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=8,tl_BreakDiamondPick=1..}] run function task_life:task_management/persistent_task_complete
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=9,tl_KillWitherSkeletons=10..}] run function task_life:task_management/persistent_task_complete
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=10,tl_KillCreepers=10..}] run function task_life:task_management/persistent_task_complete
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_ores=20..}] run function task_life:task_management/persistent_task_complete
 execute as @a[scores={tl_persistent=1,tl_persistent_calc=11,tl_PotionsUsed=10..}] run function task_life:task_management/persistent_task_complete
-execute as @a[scores={tl_persistent=1,tl_persistent_calc=19,tl_VillagerTrades=1..}] run function task_life:task_management/persistent_task_complete
+execute as @a[scores={tl_persistent=1,tl_persistent_calc=20,tl_VillagerTrades=1..}] run function task_life:task_management/persistent_task_complete
 
 # Enable task checking scores
 

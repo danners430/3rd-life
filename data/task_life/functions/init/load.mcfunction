@@ -50,6 +50,30 @@ scoreboard objectives add tl_RecordPlayed minecraft.custom:minecraft.play_record
 scoreboard objectives add tl_PotionsUsed minecraft.used:minecraft.potion "Potions Used"
 scoreboard objectives add tl_WalkWhileCrouched minecraft.custom:minecraft.crouch_one_cm "Distance While Crouched"
 
+# Add scoreboards for all_ores
+
+scoreboard objectives add tl_ores_stCoal minecraft.mined:minecraft.coal_ore
+scoreboard objectives add tl_ores_dsCoal minecraft.mined:minecraft.deepslate_coal_ore
+scoreboard objectives add tl_ores_stCopper minecraft.mined:minecraft.copper_ore
+scoreboard objectives add tl_ores_dsCopper minecraft.mined:minecraft.deepslate_copper_ore
+scoreboard objectives add tl_ores_stLapis minecraft.mined:minecraft.lapis_ore
+scoreboard objectives add tl_ores_dsLapis minecraft.mined:minecraft.deepslate_lapis_ore
+scoreboard objectives add tl_ores_stIron minecraft.mined:minecraft.iron_ore
+scoreboard objectives add tl_ores_dsIron minecraft.mined:minecraft.deepslate_iron_ore
+scoreboard objectives add tl_ores_stCopper minecraft.mined:minecraft.copper_ore
+scoreboard objectives add tl_ores_stGold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add tl_ores_dsGold minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add tl_ores_stRedstone minecraft.mined:minecraft.redstone_ore
+scoreboard objectives add tl_ores_dsRedstone minecraft.mined:minecraft.deepslate_redstone_ore
+scoreboard objectives add tl_ores_stDiamond minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add tl_ores_dsDiamond minecraft.mined:minecraft.deepslate_diamond_ore
+scoreboard objectives add tl_ores_stEmerald minecraft.mined:minecraft.emerald_ore
+scoreboard objectives add tl_ores_dsEmerald minecraft.mined:minecraft.deepslate_emerald_ore
+scoreboard objectives add tl_ores_ntQuartz minecraft.mined:minecraft.nether_quartz_ore
+scoreboard objectives add tl_ores_ntGold minecraft.mined:minecraft.nether_gold_ore
+scoreboard objectives add tl_ores_nt_Netherite minecraft.mined:minecraft.ancient_debris
+scoreboard objectives add tl_ores dummy "Unique Ores Mined"
+
 # Add daily objective stats
 
 scoreboard objectives add tl_AnimalsBred minecraft.custom:minecraft.animals_bred "Animals Bred"
