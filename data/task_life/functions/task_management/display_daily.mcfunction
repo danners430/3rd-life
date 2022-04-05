@@ -19,10 +19,9 @@ execute as @s[scores={tl_daily=1,tl_daily_calc=12}] run msg @s Mine 10 coal
 execute as @s[scores={tl_daily=1,tl_daily_calc=13}] run msg @s Mine 10 iron
 execute as @s[scores={tl_daily=1,tl_daily_calc=14}] run msg @s Mine 5 redstone
 execute as @s[scores={tl_daily=1,tl_daily_calc=15}] run msg @s Mine 5 gold
-execute as @s[scores={tl_daily=1,tl_daily_calc=16}] run msg @s Trade with a villager
-execute as @s[scores={tl_daily=1,tl_daily_calc=17}] run msg @s Complete the Sticky Situation advancement
-execute as @s[scores={tl_daily=1,tl_daily_calc=18}] run msg @s Complete the Ol' Betsy advancement
-execute as @s[scores={tl_daily=1,tl_daily_calc=19}] run msg @s Complete the Hired Help advancement
-execute as @s[scores={tl_daily=1,tl_daily_calc=20}] run msg @s Complete the Sniper Duel advancement
+execute as @s[scores={tl_daily=1,tl_daily_calc=16}] run msg @s Complete the Sticky Situation advancement
+execute as @s[scores={tl_daily=1,tl_daily_calc=17}] run msg @s Complete the Ol' Betsy advancement
+execute as @s[scores={tl_daily=1,tl_daily_calc=18}] run msg @s Complete the Hired Help advancement
+execute as @s[scores={tl_daily=1,tl_daily_calc=19}] run msg @s Complete the Sniper Duel advancement
 
 scoreboard players set @s tl_DailyTask 0

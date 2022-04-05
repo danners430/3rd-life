@@ -22,5 +22,8 @@ execute as @s[scores={tl_persistent=1,tl_persistent_calc=15}] run msg @s Complet
 execute as @s[scores={tl_persistent=1,tl_persistent_calc=16}] run msg @s Complete the Spooky Scary Skeleton advancement
 execute as @s[scores={tl_persistent=1,tl_persistent_calc=17}] run msg @s Complete the A Furious Cocktail advancement
 execute as @s[scores={tl_persistent=1,tl_persistent_calc=18}] run msg @s Complete the Not Quite "Nine" Lives advancement
+execute as @s[scores={tl_persistent=1,tl_persistent_calc=19}] run msg @s Mine all the ores in the game
+execute as @s[scores={tl_persistent=1,tl_persistent_calc=20}] run msg @s Trade with a villager
+
 
 scoreboard players set @s tl_PersistentTask 0
