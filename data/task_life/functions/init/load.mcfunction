@@ -16,6 +16,10 @@ scoreboard objectives add tl_persistent_calc dummy
 scoreboard objectives add tl_persistent dummy
 scoreboard objectives add tl_DailyTask trigger "Daily Task"
 scoreboard objectives add tl_PersistentTask trigger "Persistent Task"
+scoreboard objectives add tl_DailyTick dummy
+scoreboard objectives add tl_DailyCooldown dummy
+scoreboard objectives add tl_HasDaily dummy
+scoreboard objectives add tl_DaylightCycleStatus dummy
 
 # Add teams
 
@@ -99,9 +103,9 @@ scoreboard objectives add tl_VillagerTrades minecraft.custom:minecraft.traded_wi
 
 # Prevent infinite loops
 
-execute store result score time calc run time query daytime
-execute if score time calc matches 2000 run time set 2001
-execute if score time calc matches 2200 run time set 2201
+# execute store result score time calc run time query daytime
+# execute if score time calc matches 2000 run time set 2001
+# execute if score time calc matches 2200 run time set 2201
 
 # Delete old number markers
 

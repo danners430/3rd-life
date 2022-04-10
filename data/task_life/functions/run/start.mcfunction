@@ -1,7 +1,6 @@
-execute store result score time calc run time query daytime
-execute if score time calc matches 2001 run schedule function task_life:task_management/daily_run 300s
-
 gamerule doWeatherCycle true
-execute unless score time calc matches 2001 run gamerule doDaylightCycle true
+gamerule doDaylightCycle true
 
 say The game has started
+
+schedule function task_life:new_player/new_player_checker 30s

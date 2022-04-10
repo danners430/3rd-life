@@ -27,3 +27,7 @@ scoreboard players set @s tl_PersistentTask 0
 scoreboard players set @s tl_daily 0
 scoreboard players set @s tl_persistent 0
 scoreboard players set @s tl_helmet 0
+
+# Give player a daily task cooldown
+
+scoreboard players set @s tl_DailyCooldown 1

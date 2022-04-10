@@ -14,14 +14,18 @@ schedule function task_life:init/start_1 8s
 schedule function task_life:init/start_run 10s
 schedule function task_life:init/start_shuffle 13s
 
-# Set the time to 2001 ticks and schedule the day to begin in 5 minutes
+# Set the time to 2201 ticks
 
-time set 2001
-schedule function task_life:task_management/daily_run 300s
+time set 2201
 
-# Start weather
+# Start weather and daylight cycle
 
 gamerule doWeatherCycle true
+gamerule doDaylightCycle true
+
+# Give everyone a daily task cooldown
+
+scoreboard players set @a tl_DailyCooldown 1
 
 # Enable scoreboards
 
@@ -31,3 +35,7 @@ scoreboard players set @a tl_PersistentTask 0
 scoreboard players set @a tl_daily 0
 scoreboard players set @a tl_persistent 0
 scoreboard players set @a tl_helmet 0
+
+# Start checking for new players
+
+schedule function task_life:new_player/new_player_checker 30s

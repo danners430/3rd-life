@@ -1,8 +1,19 @@
 # Check for task time
 
-execute store result score time calc run time query daytime
-execute if score time calc matches 2000 run function task_life:task_management/end_of_day
-execute if score time calc matches 2200 run function task_life:task_management/persistent_run
+# At 8AM, all cooldowns are reset, but only if players do not currently have an active task.
+execute if predicate task_life:tl_daily_time run scoreboard players set @a[scores={tl_HasDaily=0}] tl_DailyCooldown 0
+
+# Send all players who have had their cooldowns removed to the daily run function
+execute as @a[scores={tl_DailyCooldown=0,tl_lives=0..}] run function task_life:task_management/daily_run
+
+# Once the daily task management is complete, check for players who need a new persistent task.
+execute if predicate task_life:tl_persistent_time run function task_life:task_management/persistent_run
+
+# Check for daily task expiry - players have precisely one Minecraft day to complete their tasks. The extra tick is to make sure it occurs after 8AM, so they have a day's cooldown.
+execute as @a[scores={tl_DailyTick=24001}] run function task_life:task_management/end_of_day
+
+
+
 
 # Add deepslate totals to normal totals
 
@@ -89,3 +100,10 @@ execute as @a[scores={tl_PersistentTask=0}] run scoreboard players set @s tl_Per
 
 execute as @a[scores={tl_DailyTask=2}] run function task_life:task_management/display_daily
 execute as @a[scores={tl_PersistentTask=2}] run function task_life:task_management/display_persistent
+
+# Increment daily tick counter
+
+# Store whether doDaylightCycle is enabled or disabled in tl_DaylightCycleStatus scoreboard
+execute store result score @a tl_DaylightCycleStatus run gamerule doDaylightCycle
+# Increment daily ticks if doDaylightCycle is true
+scoreboard players add @a[scores={tl_DaylightCycleStatus=1}] tl_DailyTick 1
