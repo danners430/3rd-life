@@ -35,6 +35,7 @@ scoreboard players set @a tl_PersistentTask 0
 scoreboard players set @a tl_daily 0
 scoreboard players set @a tl_persistent 0
 scoreboard players set @a tl_helmet 0
+scoreboard players set @a tl_HasDaily 0
 
 # Start checking for new players
 

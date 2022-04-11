@@ -54,3 +54,4 @@ title @s[scores={tl_daily=1}] title {"text":"Your daily task is..."}
 
 scoreboard players set @s tl_HasDaily 1
 scoreboard players set @s tl_DailyCooldown 1
+scoreboard players set @s tl_DailyTick 0

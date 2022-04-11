@@ -1,5 +1,7 @@
 # Generate markers for 3-6 lives
 
+kill @e[tag=NumberMarker]
+
 summon marker ~ ~ ~ {data:{RandomNumber:3}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:4}, Tags:["NumberMarker"]}
 summon marker ~ ~ ~ {data:{RandomNumber:5}, Tags:["NumberMarker"]}
@@ -27,6 +29,7 @@ scoreboard players set @s tl_PersistentTask 0
 scoreboard players set @s tl_daily 0
 scoreboard players set @s tl_persistent 0
 scoreboard players set @s tl_helmet 0
+scoreboard players set @s tl_HasDaily 0
 
 # Give player a daily task cooldown
 
