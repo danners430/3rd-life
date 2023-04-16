@@ -1,0 +1,1 @@
+execute if predicate task_life:tl_day_reset_time run function task_life:task_management/new_day

@@ -5,3 +5,7 @@ scoreboard objectives add tl_started dummy
 
 # Day counter
 scoreboard objectives add tl_days dummy
+
+# Scoreboard for calculations
+scoreboard objectives add tl_calc dummy
+scoreboard objectives add tl_calc2 dummy
