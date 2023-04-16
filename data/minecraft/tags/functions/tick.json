@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"task_life:run/tick"
+		"task_life:run/tick",
+		"task_life:life_management/track_lives"
 	]
 }
